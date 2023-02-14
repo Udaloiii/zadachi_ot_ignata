@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/zadachi_ot_ignata/static/css/main.8bbf0583.css",
-    "main.js": "/zadachi_ot_ignata/static/js/main.f474e2e5.js",
+    "main.css": "/zadachi_ot_ignata/static/css/main.913869d8.css",
+    "main.js": "/zadachi_ot_ignata/static/js/main.4e183036.js",
     "static/js/787.66cb4309.chunk.js": "/zadachi_ot_ignata/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/zadachi_ot_ignata/static/media/avatar.d947cb9d0d13765666b6.png",
     "index.html": "/zadachi_ot_ignata/index.html",
-    "main.8bbf0583.css.map": "/zadachi_ot_ignata/static/css/main.8bbf0583.css.map",
-    "main.f474e2e5.js.map": "/zadachi_ot_ignata/static/js/main.f474e2e5.js.map",
+    "main.913869d8.css.map": "/zadachi_ot_ignata/static/css/main.913869d8.css.map",
+    "main.4e183036.js.map": "/zadachi_ot_ignata/static/js/main.4e183036.js.map",
     "787.66cb4309.chunk.js.map": "/zadachi_ot_ignata/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8bbf0583.css",
-    "static/js/main.f474e2e5.js"
+    "static/css/main.913869d8.css",
+    "static/js/main.4e183036.js"
   ]
 }
