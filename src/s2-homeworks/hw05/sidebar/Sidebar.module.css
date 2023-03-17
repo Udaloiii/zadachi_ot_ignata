@@ -1,25 +1,41 @@
 .sidebar {
+    display: none;
 }
 
 .sidebar.open {
+    display: initial;
+    width: 317px;
+    height: 100vh;
+
 }
 
 .background {
+
 }
 
 .nav {
+    color: #c9e5ff;
 }
 
 .nav a {
+    text-decoration: none;
+    margin: 3px;
+    color: #3789c9;
 }
 
 .nav a:hover {
+    color: #f6e91a;
 }
 
 .nav a.active {
+    color: #cc0000;
+    text-decoration-line: underline;
 }
+
 .close {
+    margin: 10px;
 }
 
 .close img {
+
 }
