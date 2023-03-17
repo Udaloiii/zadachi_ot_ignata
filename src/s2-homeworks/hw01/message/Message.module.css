@@ -3,15 +3,32 @@
 }
 
 .imageAndText {
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px;
+    margin: 5px;
 
 }
 
 .imageAndText img {
+    height: 48px;
+    left: 1162px;
+    top: 204px;
+    width: 48px;
 
 }
 
 .text {
+    width: 250px;
+    height: 60px;
+    left: 635px;
+    top: 192px;
 
+    background: #06c;
+    box-shadow: 0px 5px 20px rgba(29, 33, 38, 0.03), 0px 1px 2px rgba(29, 33, 38, 0.1);
+    order: -1;
+    border-radius: 10px 10px 0px 10px;
+    margin-right: 5px;
 }
 
 .text:after {
@@ -19,13 +36,22 @@
 }
 
 .name {
-
+    color: aquamarine;
+    padding: 5px;
 }
 
 .messageText {
+    color: #c9e5ff;
+    padding: 5px;
+
 
 }
 
 .time {
-
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    margin-right: 25px;
+    margin-top: -35px;
+    font-size: small;
 }
