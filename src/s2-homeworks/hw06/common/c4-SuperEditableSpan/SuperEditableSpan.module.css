@@ -9,3 +9,8 @@
 
 .pen {
 }
+
+input {
+    border: 1px white;
+    padding: 3px;
+}

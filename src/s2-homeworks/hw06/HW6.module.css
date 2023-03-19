@@ -1,5 +1,22 @@
 .buttonsContainer {
+    margin: 10px;
+    display: flex;
+    padding: 5px 24px;
+    gap: 10px;
 }
 
 .editableSpanContainer {
+    margin-left: 35px;
+    display: flex;
+
+    width: 276px;
+    height: 36px;
+    border: 1px solid #D1D1D1;
+    border-radius: 5px;
+    color: #0080FF;
 }
+
+/*input {*/
+/*    !*outline: none;*!*/
+/*    border: 1px white;*/
+/*}*/
