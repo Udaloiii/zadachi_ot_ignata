@@ -11,6 +11,11 @@
 }
 
 input {
-    border: 1px white;
-    padding: 3px;
+    width: 276px;
+    height: 36px;
+    outline: none;
+    border: 1px solid #0080FF;
+    border-radius: 5px;
+    color: #0080FF;
+    padding: 5px;
 }
