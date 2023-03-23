@@ -94,6 +94,7 @@ const HW8 = () => {
                     </table>
                 </div>
             </div>
+            <hr/>
         </div>
     )
 }
