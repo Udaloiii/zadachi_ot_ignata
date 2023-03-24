@@ -43,7 +43,8 @@
 .messageText {
     color: #c9e5ff;
     padding: 5px;
-
+    width: max-content;
+    word-wrap: break-word;
 
 }
 
