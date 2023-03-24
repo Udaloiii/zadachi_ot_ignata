@@ -39,20 +39,29 @@
     /*border-radius: 3px;*/
     /*color: white;*/
     /*border: 1px solid #0066CC;*/
-    width: 162px
+    width: 162px;
+    background: #0080FF;
+    border-radius: 3px;
+    border: none;
 }
 
 .red:hover {
     background: #FF1A47;
+    border-radius: 3px;
+    width: 167px;
+    border: none;
 }
 
 .secondary:hover {
     background: #E5F0FA;
+    border: 1px solid #0066CC;
+    border-radius: 3px;
 }
 
 
 .default:active {
-    background: #0080FF
+    background: #0059B3;
+    border-radius: 3px;
 }
 
 .secondary:active {
@@ -61,6 +70,7 @@
 
 .red:active {
     background: #B31232;
+    border-radius: 3px;
 }
 
 .button:disabled {
