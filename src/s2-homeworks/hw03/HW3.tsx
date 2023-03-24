@@ -49,6 +49,7 @@ const HW3 = () => {
                     addUserCallback={addUserCallback}
                 />
             </div>
+            <hr/>
         </div>
     )
 }

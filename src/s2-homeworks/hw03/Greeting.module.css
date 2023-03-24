@@ -2,12 +2,15 @@
 }
 
 .inputAndButtonContainer {
+    display: flex;
 }
 
 .error {
+    color: #cc0000;
 }
 
 .input {
+    background: #F5F7FB;
 }
 
 .input:focus {
@@ -17,6 +20,13 @@
 }
 
 .button {
+    margin-left: 50px;
+    background: #0066CC;
+    width: 78px;
+    height: 36px;
+    border-radius: 3px;
+    color: white;
+    border: none;
 }
 
 .button:focus {
@@ -26,10 +36,18 @@
 }
 
 .button:disabled {
+    background: #0066CC;
+    opacity: 0.5;
+    border-radius: 3px;
+    color: white;
 }
 
 .text {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 .greeting {
+    margin-top: 15px;
+    color: #0066CC;;
 }
