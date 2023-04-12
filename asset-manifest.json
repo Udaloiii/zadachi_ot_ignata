@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/zadachi_ot_ignata/static/css/main.593b5dd9.css",
-    "main.js": "/zadachi_ot_ignata/static/js/main.83b875a6.js",
+    "main.js": "/zadachi_ot_ignata/static/js/main.ed7af94f.js",
     "static/js/787.66cb4309.chunk.js": "/zadachi_ot_ignata/static/js/787.66cb4309.chunk.js",
     "static/media/avatar.png": "/zadachi_ot_ignata/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/404.svg": "/zadachi_ot_ignata/static/media/404.9ec31c0ba8d95b0480272e46af98c955.svg",
@@ -11,11 +11,11 @@
     "index.html": "/zadachi_ot_ignata/index.html",
     "static/media/burger.svg": "/zadachi_ot_ignata/static/media/burger.700e416f7bfe3697f96b36c778d25355.svg",
     "main.593b5dd9.css.map": "/zadachi_ot_ignata/static/css/main.593b5dd9.css.map",
-    "main.83b875a6.js.map": "/zadachi_ot_ignata/static/js/main.83b875a6.js.map",
+    "main.ed7af94f.js.map": "/zadachi_ot_ignata/static/js/main.ed7af94f.js.map",
     "787.66cb4309.chunk.js.map": "/zadachi_ot_ignata/static/js/787.66cb4309.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.593b5dd9.css",
-    "static/js/main.83b875a6.js"
+    "static/js/main.ed7af94f.js"
   ]
 }
