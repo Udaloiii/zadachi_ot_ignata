@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import s from './HW11.module.css'
 import s2 from '../../s1-main/App.module.css'
-import {restoreState} from '../hw06/localStorage/localStorage'
+import { restoreState } from '../hw06/localStorage/localStorage'
 import SuperRange from './common/c7-SuperRange/SuperRange'
 
 /*
@@ -15,15 +15,24 @@ function HW11() {
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
     const [value2, setValue2] = useState(restoreState<number[]>('hw11-value2', [0, 100]))
 
+    // const change = (event: Event, value: number | number[]) => {
+    //     // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
+    //     setValue1(value as number)
+    //     setValue2(value as number)
+    // }
     const change = (event: Event, value: number | number[]) => {
-        if (Array.isArray(value)) {
-            setValue1(value[0])
-            setValue2(value)
-        } else {
-            setValue1(value)
-            setValue2([value, value2[1]])
-        }
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
+        const minDistance = 10
+
+        if (!Array.isArray(value)) {
+            setValue1(value)
+
+            setValue2([value, value2[1]])
+        } else {
+            setValue1(value[0])
+
+            setValue2(value)
+        }
     }
 
     return (
@@ -38,15 +47,19 @@ function HW11() {
                             id={'hw11-single-slider'}
                             // сделать так чтоб value1 изменялось // пишет студент
                             value={value1}
+                            onChange={change}
                         />
                     </div>
                     <div className={s.wrapper}>
                         <span id={'hw11-value-1'} className={s.number}>{value1}</span>
                         <SuperRange
-                            id={'hw11-double-slider'} onChange={change} value={value2}
+                            id={'hw11-double-slider'}
                             // сделать так чтоб value1/2 изменялось // пишет студент
+                            onChange={change}
+                            value={value2}
+                            disableSwap
                         />
-                        <span id={'hw11-value-2'} className={s.number}>{value2[1]}</span>
+                        <span id={'hw11-value-2'} className={s.number}>{value2}</span>
                     </div>
                 </div>
             </div>
