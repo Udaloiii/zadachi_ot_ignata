@@ -48,6 +48,7 @@ const HW12 = () => {
                     onChangeOption={change}
                 />
             </div>
+            <hr/>
         </div>
     )
 }
