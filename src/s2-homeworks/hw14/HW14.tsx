@@ -68,7 +68,7 @@ const HW14 = () => {
         setFind(value)
         // делает студент
         setTechs([])
-        setSearchParams(value)
+        setSearchParams()
         // добавить/заменить значение в квери урла
     }
 
