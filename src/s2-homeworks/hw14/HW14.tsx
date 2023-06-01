@@ -65,10 +65,12 @@ const HW14 = () => {
     //     // добавить/заменить значение в квери урла
     // }
     const onChangeText = (value: string) => {
-        setFind(value)
+        setLoading(false)
+
         // делает студент
         // setTechs([])
-        setSearchParams()
+        setSearchParams(value)
+        setFind(value)
         // добавить/заменить значение в квери урла
     }
 
