@@ -42,7 +42,7 @@ const HW14 = () => {
     //         })
     // }
     const sendQuery = (value: string) => {
-
+        setLoading(true)
         getTechs(value)
             .then((res) => {
                 // делает студент
@@ -56,14 +56,11 @@ const HW14 = () => {
     const onChangeText = (value: string) => {
         setFind(value)
         // делает студент
-        setTimeout(() => {
-            setLoading(true)
-            setTechs([])
-            getTechs(value)
-                .then(res => {
-                    setSearchParams(value)
-                })
-        }, 1500)
+        setTechs([])
+        getTechs(value)
+            .then(res => {
+                setSearchParams(value)
+            })
 
         // добавить/заменить значение в квери урла
     }
