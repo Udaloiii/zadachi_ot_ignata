@@ -16,11 +16,13 @@ import {useSearchParams} from 'react-router-dom'
 const getTechs = (find: string) => {
     return axios
         .get<{ techs: string[] }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2',
+            // 'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test2',
+            'https://samurai.it-incubator.io/api/3.0/homework/test2',
             {params: {find}}
         )
         .catch((e) => {
-            alert(e.response?.data?.errorText || e.message)
+            // alert(e.response?.data?.errorText || e.message)
+            console.log(e.response?.data?.errorText || e.message)
         })
 }
 
@@ -30,26 +32,40 @@ const HW14 = () => {
     const [searchParams, setSearchParams] = useSearchParams()
     const [techs, setTechs] = useState<string[]>([])
 
+    // const sendQuery = (value: string) => {
+    //     setLoading(true)
+    //     getTechs(value)
+    //         .then((res) => {
+    //             // делает студент
+    //             // сохранить пришедшие данные
+    //             //
+    //         })
+    // }
     const sendQuery = (value: string) => {
-        setLoading(true)
+
         getTechs(value)
             .then((res) => {
                 // делает студент
-
                 // сохранить пришедшие данные
-
                 //
+                setLoading(false)
+                res && setTechs(res.data.techs)
             })
     }
 
     const onChangeText = (value: string) => {
         setFind(value)
         // делает студент
+        setTimeout(() => {
+            setLoading(true)
+            setTechs([])
+            getTechs(value)
+                .then(res => {
+                    setSearchParams(value)
+                })
+        }, 1500)
 
         // добавить/заменить значение в квери урла
-        // setSearchParams(
-
-        //
     }
 
     useEffect(() => {
