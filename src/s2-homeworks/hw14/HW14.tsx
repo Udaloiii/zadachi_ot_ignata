@@ -53,15 +53,22 @@ const HW14 = () => {
             })
     }
 
+    // const onChangeText = (value: string) => {
+    //     setFind(value)
+    //     // делает студент
+    //     setTechs([])
+    //     getTechs(value)
+    //         .then(res => {
+    //             setSearchParams(value)
+    //         })
+    //
+    //     // добавить/заменить значение в квери урла
+    // }
     const onChangeText = (value: string) => {
         setFind(value)
         // делает студент
         setTechs([])
-        getTechs(value)
-            .then(res => {
-                setSearchParams(value)
-            })
-
+        setSearchParams(value)
         // добавить/заменить значение в квери урла
     }
 
