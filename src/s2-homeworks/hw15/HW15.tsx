@@ -30,11 +30,11 @@ type ParamsType = {
 const getTechs = (params: ParamsType) => {
     return axios
         .get<{ techs: TechType[], totalCount: number }>(
-            'https://incubator-personal-page-back.herokuapp.com/api/3.0/homework/test3',
+            'https://samurai.it-incubator.io/api/3.0/homework/test3',
             {params}
         )
         .catch((e) => {
-            alert(e.response?.data?.errorText || e.message)
+            // alert(e.response?.data?.errorText || e.message)   // пока закоментил
         })
 }
 
@@ -52,32 +52,58 @@ const HW15 = () => {
         getTechs(params)
             .then((res) => {
                 // делает студент
-
+                if (res && res.data) {
+                    setTechs(res.data.techs)
+                    setTotalCount(res.data.totalCount)
+                    // console.log(res.data)
+                }
                 // сохранить пришедшие данные
-
                 //
             })
+            .finally(() => setLoading(false))
     }
 
+    // const onChangePagination = (newPage: number, newCount: number) => {
+    //     // делает студент
+    //
+    //     // setPage(
+    //     // setCount(
+    //
+    //     // sendQuery(
+    //     // setSearchParams(
+    //
+    //     //
+    // }
     const onChangePagination = (newPage: number, newCount: number) => {
         // делает студент
-
-        // setPage(
-        // setCount(
-
-        // sendQuery(
-        // setSearchParams(
-
+        setPage(newPage)
+        setCount(newCount)
+        sendQuery({page: newPage, count: newCount})
+        // setSearchParams(`${page}`)
+        setSearchParams({page: newPage.toString(), count: newCount.toString()})
         //
     }
 
+    // const onChangeSort = (newSort: string) => {
+    //     // делает студент
+    //
+    //     // setSort(
+    //     // setPage(1) // при сортировке сбрасывать на 1 страницу
+    //
+    //     // sendQuery(
+    //     // setSearchParams(
+    //
+    //     //
+    // }
     const onChangeSort = (newSort: string) => {
         // делает студент
 
-        // setSort(
-        // setPage(1) // при сортировке сбрасывать на 1 страницу
+        setSort(newSort)
+        setPage(1) // при сортировке сбрасывать на 1 страницу
 
-        // sendQuery(
+        setSort(newSort);
+        sendQuery({page: page, count: count, sort: newSort});
+        setSearchParams({page: page.toString(), count: count.toString()})
         // setSearchParams(
 
         //
