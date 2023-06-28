@@ -34,7 +34,7 @@ const getTechs = (params: ParamsType) => {
             {params}
         )
         .catch((e) => {
-            alert(e.response?.data?.errorText || e.message)   // пока закоментил
+            alert(e.response?.data?.errorText || e.message)
         })
 }
 
